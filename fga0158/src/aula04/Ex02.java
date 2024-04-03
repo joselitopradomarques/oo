@@ -23,7 +23,10 @@ public class Ex02 {
 		int[] vetor = new int[x];
 		
 		for(int i = 0; i < x; i++) {
-			escreverValor(entrada, i, vetor);
+			int index = i + 1;
+			System.out.print("Digite um valor para o elemento " + index + ": ");
+			int value = entrada.nextInt();
+			vetor[i] = value;
 		}
 		entrada.close();
 		int[] sorted_vetor = vetor.clone();
@@ -43,13 +46,6 @@ public class Ex02 {
                 System.out.print(", ");
         }
         System.out.println(" ]");
-    }
-    
-    public static void escreverValor(Scanner entrada, int i, int[] vetor) {
-		int index = i + 1;
-		System.out.print("Digite um valor para o elemento " + index + ": ");
-		int value = entrada.nextInt();
-		vetor[i] = value;
     }
 	
 
