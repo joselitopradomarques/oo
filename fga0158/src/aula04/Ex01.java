@@ -8,9 +8,6 @@ public class Ex01 {
     public static void main(String[] args) {
         ArrayList<Integer> vetor = obterVetor();
         vetor.sort(null);
-        int min = vetor.get(0);
-        int length = vetor.size();
-        int max = vetor.get(length-1);
         
         HashMap<Integer, Integer> ocorrencias = contarOcorrencias(vetor);
         
